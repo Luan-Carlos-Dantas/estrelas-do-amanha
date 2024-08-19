@@ -12,7 +12,18 @@ main{
   & .main-container{
     max-width: 52.8rem;
     margin-left: auto;
+  }
 
+  & .back{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+    margin-bottom: 2.4rem;
+  }
+
+  & h1{
+    font: var(--text-heading-2);
+    margin-bottom: .8rem;
   }
 }
 
@@ -21,6 +32,19 @@ aside{
 
   & .aside-container{
     max-width: 49.6rem;
+
+    & > img{
+      margin-top: 3.2rem;
+    }
+  }
+
+  & h2{
+    font: var(--text-heading-1);
+    margin: .8rem;
+
+    & span{
+      color: var(--text-highlight);
+    }
   }
 }
 
