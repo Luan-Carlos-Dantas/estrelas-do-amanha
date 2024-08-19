@@ -19,6 +19,54 @@
         </div>
         <h1>Formulário de matrícula</h1>
         <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+
+        <form action="/" method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome Completo</label>
+              <input
+                type="text"
+                name="fullname"
+                id="fullname"
+                placeholder="Digite o nome completo">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de Nascimento</label>
+              <input
+                type="date"
+                name="birth"
+                id="birth"
+                lang="pt-BR">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+            </div>
+
+            <div class="textarea-wrapper">
+              <label for="medical-info">Informações médicas</label>
+              <textarea name="medical-info" id="medical-info" cols="30" rows="10" placeholder="A criança possui alguma condição médica que a escola deva estar ciente ?"></textarea>
+            </div>
+
+            <div class="drop-area">
+              <label for="birth-file">Certidão de nascimento</label>
+              <input id="birth-file" type="file">
+              <img src="./assets/icons/cloud-upload.svg" alt="Clique aqui para fazer o upload">
+              <p>
+                Clique aqui para <br>
+                selecionar os arquivos
+              </p>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
     <aside>
